@@ -8,9 +8,12 @@ html {
   /* Colors */
   --black: #000;
   --east-bay: #405275;
+  --orange-peel: #ff9c00;
+  --white: #fff;
   /* Fonts */
   --bnt: 'bnt', sans-serif;
   --bnt-ob: 'bnt-ob', sans-serif;
+  --lato: 'Lato', sans-serif;
 }
 
 /* * { outline: 2px solid #000 } */

@@ -1,0 +1,4 @@
+[build]
+    base    = "nikkis/"
+    publish = "nikkis/build"
+    command = "yarn build"
