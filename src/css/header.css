@@ -1,6 +1,8 @@
 .header__wrapper {
     display: flex;
     flex-wrap: wrap;
+    line-height: 1;
+    padding: 2rem 2rem 0 2rem;
     width: 100%;
 }
 .header__title,

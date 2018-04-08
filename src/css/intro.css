@@ -1,6 +1,8 @@
 .intro__wrapper {
     display: flex;
     flex-wrap: wrap;
+    line-height: 1.5;
+    padding: 2rem 2rem 0 2rem;
     width: 100%;
 }
 .intro__headline,
@@ -17,6 +19,7 @@
 }
 .intro__headline {
   font-size: 1.25rem;
+  padding-bottom: 1rem;
 }
 .intro__copy {
   font-size: 1rem;

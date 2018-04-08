@@ -3,7 +3,7 @@ import './style.css';
 import './fonts/fonts.css';
 import Header from './components/Header';
 import Intro from './components/Intro';
-import Feature from './components/Feature';
+import Hero from './components/Hero';
 import ana from './img/ana.png';
 import bastion from './img/bastion.png';
 import brigitte from './img/brigitte.png';
@@ -35,7 +35,8 @@ import zen from './img/zen.png';
 class App extends React.Component {
 
   state = {
-    selectedHero: ''
+    selectedHero: '',
+    heroName: ''
 }
 
 chooseHero = () => {
@@ -43,27 +44,30 @@ chooseHero = () => {
         ana, bastion, brigitte, doomfist, dva, genji, hanzo, junkrat, lucio, mcree, mei, mercy, moira, orisa, pharah, reaper, reinhardt, roadhog, s76, sombra, sym, torb, tracer, widow, winston, zarya, zen
     ];
     const randomHero = heroArray[Math.floor(Math.random()*heroArray.length)];
+    const heroName = randomHero.split('/').join('.').split('.')[3];
     this.setState({
-        selectedHero: randomHero
-    })
-    return (this.state.selectedHero);
+        selectedHero: randomHero,
+        heroName: heroName
+    });
+    return (heroName);
 }
 
   render() {
     return (
-      <section>
+      <section className="app__wrapper">
         <Header
           headerTitle='Randomwatch'
           headerTagline='Need a hero? Same.'
         />
         <Intro
-          introHeadline='Never know which hero to pick? Neither do I.'
           introCopy='Click the button below and let fate decide who you should play.'
         />
-        <Feature
+        <Hero
           chooseHero={ this.chooseHero }
           selectedHero={ this.state.selectedHero }
+          buttonContent="Let's get to it already!"
         />
+        <div>{this.state.heroName}</div>
       </section>
     );
   }
