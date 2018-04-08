@@ -17,6 +17,9 @@ class Hero extends React.Component {
                 <article className="hero__container">
                     <img className="hero__image" src={this.props.selectedHero} alt="Your Overwatch Hero Selection!" />
                 </article>
+                <article className="hero__container">
+                    <p className="hero__name">{ this.props.heroName }</p>
+                </article>
             </section>
         );
     }

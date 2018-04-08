@@ -65,9 +65,9 @@ chooseHero = () => {
         <Hero
           chooseHero={ this.chooseHero }
           selectedHero={ this.state.selectedHero }
+          heroName={ this.state.heroName }
           buttonContent="Let's get to it already!"
         />
-        <div>{this.state.heroName}</div>
       </section>
     );
   }
