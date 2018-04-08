@@ -1,0 +1,16 @@
+html {
+  background: url('./img/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+:root {
+  /* Colors */
+  --black: #000;
+  --east-bay: #405275;
+  /* Fonts */
+  --bnt: 'bnt', sans-serif;
+  --bnt-ob: 'bnt-ob', sans-serif;
+}
+
+/* * { outline: 2px solid #000 } */
