@@ -27,6 +27,7 @@ import sombra from './img/sombra.png';
 import sym from './img/sym.png';
 import torb from './img/torb.png';
 import tracer from './img/tracer.png';
+import unknown from './img/unknown.png';
 import widow from './img/widow.png';
 import winston from './img/winston.png';
 import zarya from './img/zarya.png';
@@ -35,7 +36,7 @@ import zen from './img/zen.png';
 class App extends React.Component {
 
   state = {
-    selectedHero: '',
+    selectedHero: unknown,
     heroName: ''
 }
 
