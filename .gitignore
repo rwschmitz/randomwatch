@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+src/img/_unmin
 
 # testing
 /coverage
